@@ -1,0 +1,111 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background: #fafafa;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input[type="submit"], input[type="button"]{
+  outline: none;
+}
+
+.wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 2;
+  box-shadow: 0px 0px 20px 1px rgba(0,0,0,.1);
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cropper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: none;
+  box-shadow: 0px 0px 20px 1px rgba(0,0,0,.1);
+}
+
+.output{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 1px rgba(0,0,0,.1);
+  display: none;
+}
+
+.output > img{
+  width: 200px;
+  height: 200px;
+}
+
+.crop_tool{
+  width: 200px;
+  position: absolute;
+  height: 200px;
+  background: rgba(255,255,255,0.5);
+  border: 1px dashed #fff;
+  top: 0px;
+  left: 0px;
+  cursor: move;
+}
+
+input[type="button"], input[type="submit"]{
+  padding: 8px 17px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  opacity: .2;
+  z-index: 1;
+  display: none;
+}
+
+input[type="submit"], .pri_btn{
+  background: #1b9be9;
+  border: 1px solid #3e91b3;
+  color: #fff;
+}
+
+input[type="submit"]:hover, .pri_btn:hover{
+  opacity: 0.9;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,.1);
+}
+
+.sec_btn{
+  border: 1px solid #add4f1;
+  background: aliceblue;
+  color: #775a5a;
+}
+
+.sec_btn:hover{
+  background: lavenderblush;
+}
+
+.btns{
+  text-align: right;
+
+}
